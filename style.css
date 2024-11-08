@@ -19,7 +19,7 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(to right, #ff6a00, #ee0979);
+    background: linear-gradient(to right, #ff77b9, #6a0dad); /* Pink to Violet */
     color: white;
     text-align: center;
     padding: 50px 0;
@@ -34,80 +34,59 @@ header p {
     font-size: 1.2rem;
 }
 
-/* About Section */
-#about {
-    background-color: #ffffff;
+/* Section Styles */
+.section {
     padding: 40px 0;
 }
 
-#about h2 {
+h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #ff6a00;
+    text-align: center;
+    color: #6a0dad; /* Violet */
 }
 
-#about p {
+p, li {
     font-size: 1.1rem;
     color: #555;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
-/* Certifications Section */
-#certifications {
-    background-color: #f2f2f2;
-    padding: 40px 0;
-}
-
-#certifications h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #ee0979;
-}
-
-#certifications ul {
+/* Skills Section */
+#skills ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-#certifications li {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-#certifications li strong {
-    color: #ff6a00;
+#skills li {
+    background-color: #ff77b9; /* Pink */
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
 }
 
 /* Projects Section */
-#projects {
-    background-color: #ffffff;
-    padding: 40px 0;
-}
-
-#projects h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #00bcd4;
-}
-
 .project {
-    background: #f9f9f9;
+    background: #ffffff;
     padding: 20px;
-    margin-bottom: 15px;
+    margin: 15px 0;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
 }
 
 .project h3 {
     font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #00bcd4;
+    color: #6a0dad;
 }
 
 .project p {
-    font-size: 1.1rem;
-    color: #555;
+    color: #333;
 }
 
 /* Footer */
@@ -119,7 +98,7 @@ footer {
 }
 
 footer a {
-    color: #ff6a00;
+    color: #ff77b9;
     text-decoration: none;
 }
 
